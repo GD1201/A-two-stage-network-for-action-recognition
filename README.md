@@ -4,12 +4,16 @@ model includes STGAIN and FJMAE;
 data is our own self-constructed human-robot interaction dataset.
 Img is model architechture.
 ####NOTICE 
+
+
 Train STGAIN
 cd model/STAGIN 
 python main.py --data_name skeleton --batch_size 24 --iterations 1000
 
 Train FJMAR
+
 cd model/FJMAE 
+
 pretrained stage : 
 export OMP_NUM_THREADS=1
 export CUDA_VISIBLE_DEVICES=0
